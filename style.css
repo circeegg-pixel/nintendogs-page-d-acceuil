@@ -29,7 +29,7 @@ button {
 
 
 #logo {
-    width: 920px;
+    width: 1050px;
 }
 
 
@@ -39,8 +39,21 @@ main {
     width: 900px;
     border: solid 5px grey;
     border-radius: 30px;
-    margin: -6px auto 40px auto;
+    margin: -9px 120px 40px auto;
     background-color: aqua;   
+    float: right;
+}
+
+.cadregauche {
+    float: left;
+    height: 900px;
+    width: 135px;
+    background-color: aqua;
+    border: solid 5px grey;
+    border-radius: 30px;
+    margin: -9px auto 40px 60px;
+
+
 }
 
 nav {
@@ -135,4 +148,10 @@ li {
     height: 40px;
     cursor: url("chiengcurseur.png"), pointer; 
 
+}
+
+
+.gif {
+    width: 5px;
+    height: 5px;
 }
