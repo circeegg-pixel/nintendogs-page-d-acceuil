@@ -7,6 +7,22 @@ body {
     cursor: url("curseurchieng.png"), auto;
 }
 
+
+main {
+    position: relative;
+    max-height: 1050px;
+    width: 900px;
+    border: solid 5px grey;
+    border-radius: 30px;
+    margin: -9px 120px 40px auto;
+    background-color: aqua;   
+    float: right;
+    font-family: cursive;
+}
+
+
+
+
 button {
     background-image: url("chienglogo.png");
     cursor: url("chiengcurseur.png"), pointer; 
@@ -18,9 +34,8 @@ button {
 }
 
 .button:hover {
-    background-color: red;
-    border-color: red;
-    color: red;
+    background-image: linear-gradient(rgb(225, 26, 169), blue);
+    border-color: black;
     transform: translateY(4px);
     box-shadow: 8px 8px 2px black;
     }
@@ -33,28 +48,8 @@ button {
 }
 
 
-main {
-    position: relative;
-    height: 900px;
-    width: 900px;
-    border: solid 5px grey;
-    border-radius: 30px;
-    margin: -9px 120px 40px auto;
-    background-color: aqua;   
-    float: right;
-}
-
-.cadregauche {
-    float: left;
-    height: 900px;
-    width: 135px;
-    background-color: aqua;
-    border: solid 5px grey;
-    border-radius: 30px;
-    margin: -9px auto 40px 60px;
 
 
-}
 
 nav {
     margin: 3% auto;
@@ -71,45 +66,110 @@ ul {
     padding: 0 10%;
 }
 
+
+/*-------------------------- test carousel-----------------------------------------*/
 .cadre {
-    background-color:pink;
-    height: 260px;
+    background-color: pink;
+    height: 360px;
     width: 850px;
     border: 3px solid blue;
     margin: auto;
+    margin-top: 15px;
     border-radius: 20px;
 }
 
-.box {
-    height: 210px;
-    width: 800px;
-    overflow: auto;
+.carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
     margin: auto;
+    width: 800px;
+    height: 270px;
+    gap: 50px;
+    scrollbar-width: none;
+    
 }
 
-.texte {
+.carousel img {
+    height: 250px;
+    width: 500px;
+}
+
+
+.dot a {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: inline-block;
+    border-color: grey;
+    box-shadow: 5px 5px 2px black;
+}
+
+
+.dot a:hover {
+    background-image: linear-gradient(rgb(225, 26, 169), blue);
+    cursor: url("chiengcurseur.png"), pointer; 
+    border-color: black;
+    transform: translateY(4px);
+    box-shadow: 8px 8px 2px black;
+}
+/*-------------------------- fin test carousel-----------------------------------------*/
+
+
+.image1 {
+    width: 1500px;
+    height: 100px;
+    cursor: url("chiengcurseur.png"), pointer; 
+}
+
+
+
+
+.cadredescription {
+    background-image: linear-gradient(rgba(36, 205, 50, 1), rgba(36, 205, 50, 0.5) );
+    width: 800px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.textedescription {
+    color: black;
+    font-size: 15px;
     text-align: center;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.font {
+    font-weight: bold;
     font-style: italic;
+    font-size:larger;
     background-color: blueviolet;
 }
 
 
 
 .cadre2 {
-    background-color:rgb(36, 205, 50);
-    height: 160px;
+    float: left;
+    background-image: linear-gradient(rgba(36, 205, 50, 1), rgba(36, 205, 50, 0.5) );
+    height: 260px;
     width: 550px;
     border: 3px solid blue;
-    margin: auto;
+    margin: auto 20px;
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .box2 {
-    height: 120px;
-    width: 500px;
+    height: 215px;
+    width: 520px;
     overflow: auto;
-    margin: auto;
+    scrollbar-width: thin;
+    margin: auto 20px;
 }
 
 .texte2 {
@@ -119,6 +179,38 @@ ul {
 }
 
 
+
+
+
+.cadre3 {
+    float: right;
+    background-image: linear-gradient(rgba(36, 205, 50, 1), rgba(36, 205, 50, 0.5) );
+    height: 260px;
+    width: 250px;
+    border: 3px solid blue;
+    margin: auto 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.box3 {
+    height: 215px;
+    width: 225px;
+    overflow: auto;
+    scrollbar-width: thin;
+    margin: auto;
+}
+
+.texte3 {
+    text-align: center;
+    font-style: italic;
+    background-color: blue;
+}
+
+
+/*-------------------------- menu-----------------------------------------*/
 
 li {
     cursor: pointer;
@@ -149,21 +241,39 @@ li {
     cursor: url("chiengcurseur.png"), pointer; 
 
 }
+/*-------------------------- menu-----------------------------------------*/
 
+
+/*-------------------------- section gif-----------------------------------------*/
+
+
+.cadregif {
+    float: left;
+    height: 1050px;
+    width: 135px;
+    background-color: aqua;
+    border: solid 5px grey;
+    border-radius: 30px;
+    margin: -9px auto 40px 60px;
+}
 
 .gif {
     width: 120px;
-    height: 110px;
+    height: 113px;
     margin: 3% auto;
+    cursor: url("chiengcurseur.png"), pointer; 
+
 }
+/*-------------------------- section gif-----------------------------------------*/
 
 
-/*-------------------------- Test -----------------------------------------*/
+
+/*-------------------------- Test texte qui défile-----------------------------------------*/
 .banner {
   width: 100%;
-  background-color: greenyellow;
-  color: #fff;
+  background-image: linear-gradient(to left,pink, rgb(30, 252, 30)); 
   overflow: hidden;
+  font-family: cursive;
   white-space: nowrap;
   padding: -15px 140px;
   font-size: 20px;
@@ -172,7 +282,7 @@ li {
 .banner-text {
   display: inline-block;
   padding-left: 100%;
-  animation: defilement 8s linear infinite;
+  animation: defilement 10s linear infinite;
 }
 
 @keyframes defilement {
@@ -183,4 +293,7 @@ li {
     transform: translateX(-100%);
   }
 }
-/*-------------------------- Test -----------------------------------------*/
+/*-------------------------- fin Test texte qui défile-----------------------------------------*/
+
+
+
